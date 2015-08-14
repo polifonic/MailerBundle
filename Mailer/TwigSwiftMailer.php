@@ -1,6 +1,6 @@
 <?php
 
-namespace Polifonic\Bundle\PolifonicMailerBundle\Mailer;
+namespace Polifonic\Bundle\MailerBundle\Mailer;
 
 use Swift_Mailer;
 use Swift_Message;
