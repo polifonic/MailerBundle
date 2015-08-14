@@ -1,0 +1,22 @@
+{
+	"name": "polifonic/mailer-bundle",
+	"license": "MIT",
+	"type": "symfony-bundle",
+	"description": "Twig- and SwiftMailer-based mailer implementation",
+    "homepage": "https://github.com/polifonic/MailerBundle",
+	"require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "~2.3",
+        "symfony/twig-bundle": "~2.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Polifonic\\Bundle\\PolifonicMailerBundle\\": ""
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "0.1.x-dev"
+		}
+	}
+}

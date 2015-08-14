@@ -1,0 +1,6 @@
+**/bower_components
+**/node_modules
+Propel/**/map
+Propel/**/om
+/vendor
+/composer.lock
