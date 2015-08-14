@@ -1,6 +1,6 @@
 <?php
 
-namespace Polifonic\Bundle\PolifonicMailerBundle;
+namespace Polifonic\Bundle\MailerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
