@@ -13,7 +13,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
  * @author     Olivier Pichon <op@united-asian.com>
  * @copyright  2015 Olivier Pichon
  */
-class PolifonicExtension extends Extension
+class PolifonicMailerExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -23,7 +23,7 @@ class PolifonicExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
-		$loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
 
         $loader->load('services.yml');
     }

@@ -16,7 +16,7 @@ class FOSUserTwigSwiftMailer extends TwigSwiftMailer implements MailerInterface
 
     public function __construct(Swift_Mailer $mailer, UrlGeneratorInterface $router, Twig_Environment $twig, array $parameters)
     {
-        parent::__construct($mailer,$twig);
+        parent::__construct($mailer, $twig);
 
         $this->router = $router;
 
@@ -30,7 +30,7 @@ class FOSUserTwigSwiftMailer extends TwigSwiftMailer implements MailerInterface
 
         $context = array(
             'user' => $user,
-            'confirmationUrl' => $url
+            'confirmationUrl' => $url,
         );
 
         return $this->sendMessage($template, $context, $this->getFromEmail('confirmation'), $user->getEmail());
@@ -43,7 +43,7 @@ class FOSUserTwigSwiftMailer extends TwigSwiftMailer implements MailerInterface
 
         $context = array(
             'user' => $user,
-            'confirmationUrl' => $url
+            'confirmationUrl' => $url,
         );
 
         return $this->sendMessage($template, $context, $this->getFromEmail('resetting'), $user->getEmail());
