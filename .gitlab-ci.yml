@@ -2,6 +2,6 @@ satis:
     script:
         - cd ~/satis
         - bin/satis.sh polifonic
-    type: build
+    stage: build
     tags:
         - satis
