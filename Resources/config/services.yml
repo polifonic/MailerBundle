@@ -2,14 +2,15 @@ services:
     polifonic.mailer.base:
         class: Polifonic\Bunde\MailerBundle\Mailer\TwigSwiftMailer
         arguments:
-            - @mailer
-            - @twig
+            - "@mailer"
+            - "@twig"
+
     polifonic.mailer.fos_user:
         class: Polifonic\Bunde\MailerBundle\Mailer\FOSUserTwigSwiftMailer
         arguments:
-            - @mailer
-            - @router
-            - @twig
+            - "@mailer"
+            - "@router"
+            - "@twig"
             -
                 template:
                     confirmation: %fos_user.registration.confirmation.template%
